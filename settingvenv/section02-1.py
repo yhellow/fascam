@@ -61,7 +61,7 @@ print()
     \' : string
     \" : string
     \r : carriage return
-    \f : 폼 피드
+    \f : f-string
     \a : bell sound
     \b : backspace
     \000 : null
@@ -79,8 +79,8 @@ print("""'singles inside threes'""")
 print('''"doubles inside threes"''')
     # backslashes act as escapers that help the python compiler understand the next codes as string 
     # print already has a default new line command so by adding \n at the end results in two new lines
-print('\what\'s\nnext\\\n') 
-print('\what\'s\nnext\\\n\n') 
+print('what\'s\nnext\\\n')
+print('what\'s\nnext\\\n\n')
 print('one or two new lines?')
     # tabs
 print('\t\thighlight the hidden tabs')
