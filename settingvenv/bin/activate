@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/yh/Desktop/programming/repositories/deer/tangerine/fastcampus/settingvenv"
+VIRTUAL_ENV="/Users/yh/Desktop/programming/repositories/fascam/settingvenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

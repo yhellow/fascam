@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/yh/Desktop/programming/repositories/deer/tangerine/fastcampus/settingvenv"
+set -gx VIRTUAL_ENV "/Users/yh/Desktop/programming/repositories/fascam/settingvenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
