@@ -73,3 +73,56 @@ print(1 in d2)
 print(1 not in d3)
 print(1 not in d2)
 print()
+
+
+
+# SET
+# set: order X, duplicate X, modify O, delete O
+    # can use indexing or slicing after changing data type
+
+
+# declaring set
+s1 = set()
+s2 = set([1, 2, 3, 4])
+s3 = set([1 ,4, 5 , 6, 6])
+s4 = set([5, 6, 7, 8])
+
+    # no duplicates
+print(s3)
+    # changing sets into tuples or lists
+ts2 = list(s2)
+ts3 = tuple(s3)
+print(ts2)
+print(ts3)
+print()
+
+
+# set functions
+    # 교집합
+print(s2.intersection(s3))
+print(s2.intersection(s4))
+print(s2 & s3)
+print(s2 & s4)
+    # 합집합
+print(s2.union(s3))
+print(s2.union(s4))
+print(s2 | s3)
+print(s2 | s4)
+    # 차집합
+    # a.difference(b) : a-b
+print(s2.difference(s3))
+print(s3.difference(s2))
+print(s2 - s3)
+print(s3 - s2)
+
+
+# add and remove
+    # add
+    # duplicate is automatically filtered
+s2.add(0)
+s2.add(4)
+print(s2)
+    # remove
+s2.remove(0)
+print(s2)
+print()
