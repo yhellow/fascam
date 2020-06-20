@@ -172,3 +172,7 @@ print(a[::-1])
 print(a[::-2])
 print()
 
+
+# deleting immutables
+    # del immutableVar
+
