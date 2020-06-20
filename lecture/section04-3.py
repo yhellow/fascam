@@ -1,11 +1,11 @@
 # Section 04-3
-# list, tuples, indexing, slicing
+# list, tuple, indexing, slicing
     # making data storage comfortable, efficient, and compact
     # LIFO: last in first out
     
 
 # LIST
-# list: order, duplicate, modify, delete
+# list: order O, duplicate O, modify O, delete O
 
 
 # declaring a list
@@ -128,7 +128,7 @@ print()
 
 
 # TUPLE
-# tuple: order, duplicate, modify x, delete x
+# tuple: order O, duplicate O, modify X, delete X
 
 
 # declaring a tuple
