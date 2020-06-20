@@ -95,7 +95,7 @@ print()
     .extend(otherList)  inserting a list inside a list
     .sort()         sorts the list into increasing value
     .reverse()      reversing the indexes
-    .count('c')
+    .count()        counting duplicates
 """
 z = [1, 4, 6, 4, 3]
 z.append(0)
