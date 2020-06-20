@@ -1,4 +1,4 @@
-# Section04
+# Section0-1
 # data types and math operations
 
 """
@@ -137,6 +137,7 @@ print()
     divmod(x, y): the pair (x // y, x % y)
     pow(x, y): x to the power y
 """
+
 
 # divmod()
 dm = divmod(100,9)
