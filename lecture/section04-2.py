@@ -147,7 +147,7 @@ print(('').join(list(reversed(b))))
 print()
 
 
-# printing partial strings
+# slicing: printing partial strings
     # the first letter is number 0
     # [a:b] : returns letters from a to b-1, length is b-a
 print(a[0:3])
@@ -158,7 +158,7 @@ print(a[0:len(a)])
     # blanks assume start to end
     # !! no direction
 print(a[:])
-    # third option: skipping letters = slicing
+    # third option: skipping letters
     # positive slicing
 print(a[::2])
 print(a[1::2])
