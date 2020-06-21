@@ -86,7 +86,8 @@ s1 = set()
 s2 = set([1, 2, 3, 4])
 s3 = set([1 ,4, 5 , 6, 6])
 s4 = set([5, 6, 7, 8])
-
+s5 = {'cannon', 'be', 'empty'}
+    # empty {} are recognized as dictionaries
     # no duplicates
 print(s3)
     # changing sets into tuples or lists

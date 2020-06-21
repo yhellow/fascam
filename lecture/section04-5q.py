@@ -34,7 +34,7 @@ print()
 
 # 6. 다음 문자열을 거꾸로 출력해보세요. : "Strawberry"
 given = "Strawberry"
-print('6. ', ('').join(reversed(list(given))))
+print('6. ', ''.join(reversed(list(given))))
 # print(('').join(list(given).reverse()))
 print('6. ', given[::-1])
 print()

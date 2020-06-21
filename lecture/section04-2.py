@@ -82,7 +82,7 @@ print()
 
 
 # string functions
-# python string fuctions: https://www.w3schools.com/python/python_ref_string.asp
+# python string functions: https://www.w3schools.com/python/python_ref_string.asp
 """
     capitalize()	Converts the first character to upper case
     casefold()	Converts string into lower case
