@@ -114,13 +114,16 @@ print(s2.difference(s3))
 print(s3.difference(s2))
 print(s2 - s3)
 print(s3 - s2)
-
+print()
 
 # add and remove
     # add
     # duplicate is automatically filtered
 s2.add(0)
 s2.add(4)
+print(s2)
+    # update: add more than one
+s2.update([6, 7, 8])
 print(s2)
     # remove
 s2.remove(0)
