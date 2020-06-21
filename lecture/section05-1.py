@@ -122,4 +122,3 @@ def weather(temp, humidity):
             print("weather humid and hot")
 weather(temp, humidity)
 print()
-
