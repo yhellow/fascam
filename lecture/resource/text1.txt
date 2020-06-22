@@ -1,0 +1,2 @@
+new file made from write mode
+appended line from append mode
