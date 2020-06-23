@@ -6,7 +6,7 @@
 
 
 # SQL
-    # browserportable to use sqlite3 conveniently (robo3t for mongodb)
+    # browserportable: tool to use sqlite3 conveniently (robo3t for mongodb)
 import sqlite3
     # sqlite3 and sqlite version
 print('sqlite3.version: ', sqlite3.version)
@@ -27,4 +27,9 @@ print()
 
 # DB
 # DB: create & auto commit (rollback)
-
+#     # using pymongo instead. pip install pymongo
+# from pymongo import MongoClient
+# client = MongoClient('localhost', 27017)
+# db = client.creation
+    
+# db.alien.insert_one({'name': 'monica', 'partner': 'chandler'})
