@@ -6,6 +6,7 @@
 # READ
     # recallName = open('./filedirectory/fileName', 'mode')
     # with open('./filedirectory/fileName', 'mode') as recallname
+        # fileVariable.read() / fileVariable.readline() / fileVariable/.readlines()
 
 
 # 1
@@ -63,7 +64,7 @@ with open('./resource/review.txt', 'r') as f:
     # print(line)
     while line:
         print(line, end='****')
-        line = f.readline()
+        line = f.readline()             # adding a 'line.readline()' to send the cursor to the next line
 
 print()
 print('---------------------------------------')
@@ -99,10 +100,11 @@ print()
 
 
 
-
+# ----------------------------------------------------------------------------------------
 # WRITE
     # recallName = open('./filedirectory/fileName', 'mode')
     # with open('./filedirectory/fileName', 'mode') as recallname
+    # fileVariable.write() / fileVariable.writeline() / fileVariable/.writelines()
 
 
 # 1
