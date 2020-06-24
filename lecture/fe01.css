@@ -1,0 +1,100 @@
+/* tag */
+/* .id */
+/* #class */
+/* 1. importance of inheritance and logic */
+    /* fonts are usually inheritable */
+    /* layouts are usually not inheritable */
+    /* user agent stylesheet overrides inheritance */
+
+
+/* FONTS CSS ------------------------------------------------------------------------ */
+
+
+/* SUPER */
+
+html {
+    /* usually pixels for font-size */
+    font-size: 18px;
+    /* font-weights can be words or a number between 100 to 900 */
+    font-weight: normal;
+    font-weight: 500;
+    /* display as 'block' or 'inline' */
+    display: block;
+}
+
+
+/* SUBS */
+
+p {
+    /* adding fonts */
+        /* multiple fonts to ensure a backup font incase a certain font is unavailable */
+        /* use '' or "" only property values with spacebars */
+        /* can also use webfonts that are contained in the web but not on the localhost */
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    /* inherits the parent property, overriding user agent stylesheet */
+    font-size: inherit;
+    /* font-style : normal, bold, italic, etc.*/
+    font-style: italic;
+    font-style: normal;
+}
+
+li {
+    /* emphasize font: *n the font-size of the parent */
+    /* when the ITEM repeats, em can repeat. to prevent issues, use r(root)em */
+    font-size: 1.5em;
+    font-size: 1.5rem;
+}
+
+dl {
+    /* fonts shortened property */
+    /* font: style weight size family */
+        /* 1. style and weight has to come in front of size */
+        /* 2. family has to come last */
+    font: normal 500 1.5rem Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+}
+
+
+/* LAYOUT CSS ----------------------------------------------------------------------- */
+
+
+dt {
+    /* text-align: the positioning of the text */
+    text-align: right;
+    text-align: center;
+    /* line-height: line spacing */
+        /* 1 : spacing height is the height of the font = no spacing */
+    line-height: 1;
+    line-height: 1.2;
+}
+
+
+
+/* COLOR CSS ----------------------------------------------------------------------- */
+
+
+dd {
+    /* color can be keyword (120 types) / rgb code / rgb() */
+        /* rgb(255, 255, 255) */
+        /* the lower the darker */
+        /* #ffffff - white / #000000 - black */
+    color: blue;
+    color: rgb(255, 0, 255);
+    /* rgba (0, 0, 0, a) : a - transparency */
+        /* 0=< a <= 1 */
+        /* a=1 : 100% transparency */
+    color: rgba(255, 0, 255, 0.5)
+}
+
+
+/* BGC CSS ----------------------------------------------------------------------- */
+
+
+.contain{
+    background-color: #fff;
+    background-image: ;
+}

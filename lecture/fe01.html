@@ -1,0 +1,89 @@
+<!-- html basics -->
+<!-- understanding why \n is only built-in in some tags -->
+<head>
+    <!-- <link rel=stylesheet href='fe01.css'> -->
+</head>
+<body>
+    <h1>header1</h1>
+    <h2>header2</h2>
+    <h3>header3</h3>
+    <h4>header4</h4>
+    <h5>header5</h5>
+    <h6>header6</h6>
+    <p>paragraph with <em>itallics</em> and <strong>bold</strong> letters</p>
+    <div>built-in \n function</div>
+    <span>no built-in \n function</span>
+    <p>the difference is whether the tag is a <strong>'block</strong> or an <strong>'inline'</strong> element</p>
+    <ol>
+        <li>numerically</li>
+        <li>ordered</li>
+        <li>list</li>
+    </ol>
+    <ul>
+        <li>unordered</li>
+        <li>bullet point</li>
+        <li>list</li>
+    </ul>
+    <dl>definition list
+        <dt>term1</dt>
+        <dt>term2</dt>
+    </dl>
+    <pre>
+        <!-- &lt; / &gt; : showing <> without triggering a tag -->
+        <code>&lt;html&gt;</code>
+        <!-- &nbsp;: non breaking space -->
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;</code>
+        <code>try:
+            a = 'richard'
+            if a == 'rich':
+            print('access given')
+            else: 
+            raise ValueError
+            except ValueError:
+            print('no access')
+            except Exception as f:
+            print(f)
+            else:
+            print('through')
+        </code>
+    </pre> 
+
+
+    <!-- !! inlines cannot have a block box area-->
+    <dl>
+        <dt>block e.g. (cannot have block within an inline)</dt>
+        <ul>
+            <li>div</li>
+            <li>h1</li>
+            <li>p</li>
+            <li>ul</li>
+            <li>li</li>
+        </ul>
+        <p>
+            <em>&nbsp&nbsp&nbsp&nbsp can change block into an inline by using 
+                <code>
+                    span{
+                        display: inline;
+                    }
+                </code>
+            </em>
+        </p>
+        <dt>inline e.g. (cannot have block within an inline)</dt>
+        <ul>
+            <li>span</li>
+            <li>em</li>
+            <li>a</li>
+            <li>strong</li>
+            <li>code</li>
+        </ul>
+        <p>
+            <em>&nbsp&nbsp&nbsp&nbsp can change inline into a block by using 
+                <code>
+                    span{
+                        display: block;
+                    }
+                </code>
+            </em>
+        </p>
+    </dl>
+</body>
