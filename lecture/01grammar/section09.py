@@ -11,7 +11,7 @@
 
 # 1
     # usual open() function
-f = open('./resource/review.txt', 'r')
+f = open('./01grammar/resource/review.txt', 'r')
 content1 = f.read()
 print(content1)
 print(dir(f))
@@ -24,7 +24,7 @@ print()
 
 # 2
     # with loop
-with open('./resource/review.txt', 'r') as f:   # with closes the resource without 'close()'
+with open('./01grammar/resource/review.txt', 'r') as f:   # with closes the resource without 'close()'
     content2 = f.read()
     print(content2)
     print(list(content2))
@@ -36,7 +36,7 @@ print()
 
 
 # 3
-with open('./resource/review.txt', 'r') as f:
+with open('./01grammar/resource/review.txt', 'r') as f:
     for c in f:
         # print(c)                                # print each line and print separately
         print(c.strip())
@@ -47,7 +47,7 @@ print()
 
 
 # 4
-with open('./resource/review.txt', 'r') as f:
+with open('./01grammar/resource/review.txt', 'r') as f:
     content4 = f.read()
     print('>', content4)
     content4 = f.read()
@@ -59,7 +59,7 @@ print()
 
 
 # 5
-with open('./resource/review.txt', 'r') as f:
+with open('./01grammar/resource/review.txt', 'r') as f:
     line = f.readline()
     # print(line)
     while line:
@@ -72,7 +72,7 @@ print()
 
 
 # 6
-with open('./resource/review.txt', 'r') as f:
+with open('./01grammar/resource/review.txt', 'r') as f:
     content6 = f.readlines()                    # readlines: each line is saved into a list
     # print(content6)
     for c in content6:
@@ -86,7 +86,7 @@ print()
 # 7
     # mean of the scores in 'score.txt'
 score = []
-with open('./resource/score.txt', 'r') as f:
+with open('./01grammar/resource/score.txt', 'r') as f:
     for eachline in f:
         score.append(int(eachline))
     print(score)
@@ -109,19 +109,19 @@ print()
 
 # 1
     # write mode
-with open('./resource/text1.txt', 'w') as f:
+with open('./01grammar/resource/text1.txt', 'w') as f:
     f.write('new file made from write mode\n')
 
 
 # 2
     # append mode
-with open('./resource/text1.txt', 'a') as f:
+with open('./01grammar/resource/text1.txt', 'a') as f:
     f.write('appended line from append mode')
 
 
 # 3 
 from random import randint
-with open('./resource/text2.txt', 'w') as f:
+with open('./01grammar/resource/text2.txt', 'w') as f:
     for cnt in range(6):
         f.write(str(randint(1, 50)))
         f.write('\n')
@@ -129,13 +129,13 @@ with open('./resource/text2.txt', 'w') as f:
 
 # 4
     # writelines: saves list as file
-with open('./resource/text3.txt', 'w') as f:
+with open('./01grammar/resource/text3.txt', 'w') as f:
     list = ['chandler\n', 'monica\n', 'phoebe\n']
     f.writelines(list) 
 
 
 # 5
     # printing on the new write mode file instead of on the console
-with open('./resource/text4.txt', 'w') as f:
+with open('./01grammar/resource/text4.txt', 'w') as f:
     print('test printer 1', file=f)
     print('test printer 2', file=f)

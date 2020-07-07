@@ -16,7 +16,7 @@ words = []                              # list of random words
 n = 1                                   # try count number
 cor_cnt = 0                             # correct count number
 
-with open('./resource/word.txt', 'r') as f:
+with open('./01grammar/resource/word.txt', 'r') as f:
     for c in f:
         words.append(c.strip().lower())
 # print(words)

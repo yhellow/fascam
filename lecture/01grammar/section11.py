@@ -25,7 +25,7 @@ print()
 
 
 # e.g.1
-with open('./resource/sample1.csv', encoding= 'korean') as f:      
+with open('./01grammar/resource/sample1.csv', encoding= 'korean') as f:      
         # add encoding= 'language' to decode new language 
     reader = csv.reader(f)          # note difference with txt file: 'read = f.read()'
     next(reader)                    # header skip: next(pushes the cursor for one take)
@@ -43,7 +43,7 @@ print()
 
 # e.g.2
     # reading csv files with modified import 
-with open('./resource/sample2.csv', encoding='korean') as f:    
+with open('./01grammar/resource/sample2.csv', encoding='korean') as f:    
     reader = csv.reader(f, delimiter= '|')      # delimiter= '|' to separate the strings with |              
     print(reader)
     print(type(reader))
@@ -59,7 +59,7 @@ print()
 
 # e.g.3
     # dictionary change
-with open('./resource/sample2.csv', encoding='korean') as f:
+with open('./01grammar/resource/sample2.csv', encoding='korean') as f:
     reader = csv.DictReader(f, delimiter= '|')      #reader for dictionaries: assigning the key to each value
 
     for c in reader:                                # for each row 
@@ -72,7 +72,7 @@ with open('./resource/sample2.csv', encoding='korean') as f:
 # e.g.4
     # inserting rows with for loops
 w = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]]
-with open('./resource/sample3.csv', 'w') as f:       # 'with open() as X:' and '
+with open('./01grammar/resource/sample3.csv', 'w') as f:       # 'with open() as X:' and '
     wt = csv.writer(f)                               # .writer()' both adds a new line
                                                      # fix with adding a 'newline= ''' into 'open()'
     for v in w: 
@@ -82,7 +82,7 @@ with open('./resource/sample3.csv', 'w') as f:       # 'with open() as X:' and '
 
 # e.g.5
     # inserting rows without for loops
-with open('./resource/sample4.csv', 'w') as f:
+with open('./01grammar/resource/sample4.csv', 'w') as f:
     wt = csv.writer(f)
     wt.writerows(w)             # writerow: inspecting filters foreach row / writerows: no need for filters
 print()
@@ -100,7 +100,7 @@ print()
 import pandas as pd
     # options to put in 'pd.read_excel()'
     # sheetname= sheet name or nubmer, header= assiging header, skiprow= the number of the row to skip
-xlsx = pd.read_excel('./resource/sample.xlsx')
+xlsx = pd.read_excel('./01grammar/resource/sample.xlsx')
     # data check
 print(xlsx.head())          # head(): showing the first rows
 print()
@@ -110,5 +110,5 @@ print(xlsx.shape)           # shape(): rows, columns
 print()
 
 # writing excel or csv
-xlsx.to_excel('./resource/result.xlsx', index= False)       # index= true/false: giving index to the rows
-xlsx.to_csv('./resource/result.csv', index= False)       # index= true/false: giving index to the rows
+xlsx.to_excel('./01grammar/resource/result.xlsx', index= False)       # index= true/false: giving index to the rows
+xlsx.to_csv('./01grammar/resource/result.csv', index= False)       # index= true/false: giving index to the rows
