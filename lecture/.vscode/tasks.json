@@ -1,5 +1,5 @@
 {
-    "version": "2.0.0",
+    "versipn": "2.0.0",
     "tasks": [
         {
             "label": "Project Label",
@@ -14,7 +14,7 @@
             },
             "options": {
                 "env": {
-                    "PYTHONIOENCODNG": "UTF-8"
+                    "PYTHONIOENCODING": "UTF-8"
                 }
             },
             "group": {
@@ -22,5 +22,6 @@
                 "isDefault": true
             }
         }
-    ]
+    ]   
 }
+
